@@ -3,7 +3,13 @@
 ## ▶️ Run all tests (unit + integration)
 ⚠️ Make sure the server is running first:
 ```
-python app.py```
+python app.py
+```
+Also make sure to install playwright:
+```
+playwright install
+```
+To run tests:
 ```bash
 python -m pytest
 ```
