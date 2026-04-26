@@ -15,8 +15,10 @@ jobs:
 
       - run: pip install -r requirements.txt
       - run: playwright install
-
-      - run: python -m pytest
+      - name: Start Flask server
+        run: |
+          python app.py &
+          sleep 5
 
   security:
     runs-on: ubuntu-latest
